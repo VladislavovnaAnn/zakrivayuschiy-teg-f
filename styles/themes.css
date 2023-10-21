@@ -4,3 +4,89 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-dark {
+  --main-font: Inter "Arial", sans-serif;
+  --accent-font: PressStart2P, "Arial", sans-serif;
+  --main-font-weight: 465;
+  --accent-font-weight: 785;
+  --main-color: #00cc14;
+  --acent-color:#00cc14;
+  --background-color: #000000;
+  --icon-shadow-color: #000000;
+  --sparks-color: #FF0000;
+  --gradient-left-to-right: repeating-linear-gradient(
+    90deg,
+    #000,
+    rgb(0 2 211/ 0) 2px
+  );
+  --gradient-up-to-down: repeating-linear-gradient(#000, rgb(0 2 211/ 0) 2px);
+  --gradient-up-to-down-saturation: linear-gradient(#007f0c, #004306);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-font: Inter "Arial", sans-serif;
+    --accent-font: PressStart2P, "Arial", sans-serif;
+    --main-font-weight: 465;
+    --accent-font-weight: 785;
+    --main-color: #00cc14;
+    --acent-color:#00cc14;
+    --background-color: #000000;
+    --icon-shadow-color: #000000;
+    --sparks-color: #FF0000;
+    --gradient-left-to-right: repeating-linear-gradient(
+      90deg,
+      #000,
+      rgb(0 2 211/ 0) 2px
+    );
+    --gradient-up-to-down: repeating-linear-gradient(#000, rgb(0 2 211/ 0) 2px);
+    --gradient-up-to-down-saturation: linear-gradient(#007f0c, #004306);
+  }
+}
+
+:root.theme-light {
+  --main-font: Inter "Arial", sans-serif;
+  --accent-font: PressStart2P, "Arial", sans-serif;
+  --main-font-weight: 400;
+  --accent-font-weight: 700;
+  --main-color: #000000;
+  --acent-color: #ffffff;
+  --background-color: #ffffff;
+  --icon-shadow-color: #ffffff;
+  --sparks-color: #FF0000;
+  --gradient-left-to-right: repeating-linear-gradient(
+    90deg,
+    #d3d3d3,
+    rgb(211 211 211/ 0) 2px
+  );
+  --gradient-up-to-down: repeating-linear-gradient(
+    #d3d3d3,
+    rgb(211 211 211/ 0) 2px
+  );
+  --gradient-up-to-down-saturation: linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --main-font: Inter "Arial", sans-serif;
+    --accent-font: PressStart2P, "Arial", sans-serif;
+    --main-font-weight: 400;
+    --accent-font-weight: 700;
+    --main-color: #000000;
+    --acent-color: #ffffff;
+    --background-color: #ffffff;
+    --icon-shadow-color: #ffffff;
+    --sparks-color: #FF0000;
+    --gradient-left-to-right: repeating-linear-gradient(
+      90deg,
+      #d3d3d3,
+      rgb(211 211 211/ 0) 2px
+    );
+    --gradient-up-to-down: repeating-linear-gradient(
+      #d3d3d3,
+      rgb(211 211 211/ 0) 2px
+    );
+    --gradient-up-to-down-saturation: linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+  }
+}

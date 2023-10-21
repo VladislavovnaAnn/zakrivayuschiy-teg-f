@@ -1,1 +1,23 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+  --main-font: Inter "Arial", sans-serif;
+  --accent-font: PressStart2P, "Arial", sans-serif;
+  --main-font-weight: 400;
+  --accent-font-weight: 700;
+  --main-color: #000000;
+  --acent-color: #ffffff;
+  --background-color: #ffffff;
+  --icon-shadow-color: #ffffff;
+  --sparks-color: #FF0000;
+  --gradient-left-to-right: repeating-linear-gradient(
+    90deg,
+    #d3d3d3,
+    rgb(211 211 211/ 0) 2px
+  );
+  --gradient-up-to-down: repeating-linear-gradient(
+    #d3d3d3,
+    rgb(211 211 211/ 0) 2px
+  );
+  --gradient-up-to-down-saturation: linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+}
