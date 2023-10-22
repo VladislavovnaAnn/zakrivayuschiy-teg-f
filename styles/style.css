@@ -13,20 +13,20 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 
 
-
-
 *,
 *::before,
 *::after {
   outline: 1px solid red;
 }
+
 */
+
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
   padding: 102px 2px;
-  font-variation-settings: var(--main-font, Inter, "Arial", sans-serif);
-  font-weight: var(--main-font-weight, 400);
+  font-family: var(--main-font, Inter, "Arial", sans-serif);
+  font-variation-settings: "wght" var(--main-font-weight, 400);
   background-color: var(--background-color, #fff);
   color: var(--main-color, #000);
   background-image: var(--gradient-left-to-right), var(--gradient-up-to-down),
@@ -212,7 +212,7 @@
 .cards__title {
   padding: 10px 5px;
   color: var(--main-color);
-  font-family: Inter;
+  font-family: var(--main-font, Inter, "Arial", sans-serif);
   font-size: 18px;
   font-style: normal;
   font-weight: var(--accent-font-weight);
@@ -289,13 +289,9 @@
     -1px -1px var(--icon-shadow-color);
 }
 
-.lirics {
-  line-height: 30px;
-}
-
 .cards__text {
   font-size: 18px;
-  font-family: Inter;
+  font-family: var(--main-font, Inter, "Arial", sans-serif);
   font-style: normal;
   font-weight: var(--main-font-weight);
   line-height: 21px;
