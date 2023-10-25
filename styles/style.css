@@ -86,6 +86,8 @@
 .theme-menu__button:disabled {
   content: "▶";
   cursor: default;
+  pointer-events: none;
+  opacity: 0.6;
 }
 
 /*Кнопки переключения тем*/
@@ -133,11 +135,6 @@
   cursor: pointer;
   opacity: 0.6;
   transition: opacity 0.3s;
-}
-
-.theme-menu__button:disabled {
-  pointer-events: none;
-  opacity: 0.6;
 }
 
 .theme-menu__button:disabled::before {
@@ -375,7 +372,6 @@
   min-width: 21px;
   height: auto;
   color: var(--acent-color);
-  fill: var(--acent-color);
   mix-blend-mode: difference;
 }
 
