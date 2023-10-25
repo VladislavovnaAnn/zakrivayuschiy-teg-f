@@ -2,16 +2,17 @@
 
 @font-face {
   font-family: "PressStart2P";
-  src: url(./PressStart2P-Regular.woff) format("woff");
   font-display: swap;
   font-weight: 400;
+  src: local("PressStart2P"), url("./PressStart2P-Regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: Inter;
-  src: url(./Inter-Variable.woff2) format("woff2 supports variations"),
-    url(./Inter-Variable.woff2) format("woff2-variations"),
-    url(./Inter-Variable.woff) format("woff");
+  font-family: "Inter";
   font-display: swap;
   font-weight: 400 785;
+  src: local("Inter"),
+    url("./Inter-Variable.woff2") format("woff2 supports variations"),
+    url("./Inter-Variable.woff") format("woff2-variations"),
+    url("./Inter-Variable.woff") format("woff");
 }
